@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstudaFácil - Reforço Escolar Gamificado</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -40px auto 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h2 {
+            color: #1e293b;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+
+        input,
+        select {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        button {
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Transforme o estudo do seu filho em um jogo!</h1>
+        <p>Aulas de reforço escolar acessíveis com tutores universitários e gamificação para engajar alunos do Ensino
+            Fundamental e Médio.</p>
+    </header>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎮 Gamificación</h3>
+                <p>O aluno ganha pontos, conquistas e recompensas ao estudar.</p>
+            </div>
+            <div class="feature-card">
+                <h3>👨‍🏫 Tutores Qualificados</h3>
+                <p>Estudantes universitários selecionados para um ensino dinâmico.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Para os Pais</h3>
+                <p>Relatórios claros e transparentes sobre a evolução escolar.</p>
+            </div>
+        </div>
+
+        <h2>Garanta acesso antecipado com 50% de desconto!</h2>
+        <form action="#" method="POST"
+            onsubmit="event.preventDefault(); alert('Obrigado pelo interesse! Seu cadastro de lead foi simulado com sucesso.');">
+            <div>
+                <label for="nome">Seu Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Ex: Maria Silva" required>
+            </div>
+            <div>
+                <label for="email">E-mail Principal:</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+            <div>
+                <label for="perfil">Você é:</label>
+                <select id="perfil" required>
+                    <option value="">Selecione...</option>
+                    <option value="pai">Pai / Mãe / Responsável</option>
+                    <option value="aluno">Estudante</option>
+                    <option value="tutor">Futuro Tutor</option>
+                </select>
+            </div>
+            <button type="submit">QUERO PARTICIPAR DO LANÇAMENTO</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EstudaFácil. Todos os direitos reservados. Projeto MVP.</p>
+    </footer>
+
+</body>
+
+</html>
